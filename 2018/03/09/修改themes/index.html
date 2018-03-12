@@ -103,17 +103,17 @@
   <meta name="keywords" content="shengwei, web, Hexo, NexT" />
 
 
-<meta name="description" content="1,选择主题">
+<meta name="description" content="1,选择主题我用的NexT  NexT使用文档http://theme-next.iissnan.com/  首先下载主题，定位在Hexo目录 git clone git@github.com:theme-next/hexo-theme-next.git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="修改themes">
 <meta property="og:url" content="Via1877.github.io/2018/03/09/修改themes/index.html">
 <meta property="og:site_name" content="My Blog">
-<meta property="og:description" content="1,选择主题">
+<meta property="og:description" content="1,选择主题我用的NexT  NexT使用文档http://theme-next.iissnan.com/  首先下载主题，定位在Hexo目录 git clone git@github.com:theme-next/hexo-theme-next.git">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-09T16:55:31.557Z">
+<meta property="og:updated_time" content="2018-03-12T05:57:05.873Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="修改themes">
-<meta name="twitter:description" content="1,选择主题">
+<meta name="twitter:description" content="1,选择主题我用的NexT  NexT使用文档http://theme-next.iissnan.com/  首先下载主题，定位在Hexo目录 git clone git@github.com:theme-next/hexo-theme-next.git">
 
 
 
@@ -326,7 +326,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/thechnology/" itemprop="url" rel="index"><span itemprop="name">thechnology</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">technology</span></a></span>
 
                 
                 
@@ -360,10 +360,45 @@
       
 
       
-        <p>1,选择主题</p>
-<a id="more"></a>
-<p>2 配置文件</p>
-<hr>
+        <h1 id="1-选择主题"><a href="#1-选择主题" class="headerlink" title="1,选择主题"></a>1,选择主题</h1><p>我用的NexT</p>
+<blockquote>
+<p>NexT使用文档<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a></p>
+</blockquote>
+<p>首先下载主题，定位在Hexo目录</p>
+<pre><code>git clone git@github.com:theme-next/hexo-theme-next.git
+</code></pre><a id="more"></a>
+<h1 id="2-启用主题"><a href="#2-启用主题" class="headerlink" title="2,启用主题"></a>2,启用主题</h1><p>在Hexo目录下，有一个配置文件_config.yml,被称为站点配置文件。<br>在next主题文件夹内，还有一个_config.yml配置文件，被称为主题配置文件。<br>启用主题时，打开站点配置文件，找到theme,将值修改为 next</p>
+<pre><code>theme:next
+</code></pre><h1 id="3-主题配置"><a href="#3-主题配置" class="headerlink" title="3,主题配置"></a>3,主题配置</h1><p>a.外观选择<br>NexT有四种不同的外观，Muse、Mist、Pisces、Gemini</p>
+<blockquote>
+<p>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白<br>Mist - Muse 的紧凑版本，整洁有序的单栏外观<br>Pisces - 双栏 Scheme，小家碧玉似的清新<br>Gemini - 双栏 Scheme，(在我看来和Pisces差不多)<br>更换Scheme，在主题配置文件中找到Scheme，将你需要的Scheme前面的#除去即可，如：我正在使用的Mist</p>
+</blockquote>
+<pre><code># Schemes
+#scheme: Muse
+scheme: Mist
+#scheme: Pisces
+#scheme: Gemini
+</code></pre><p>b.语言设置<br>编辑站点配置文件，将language设置成需要。例如我选择得简体中文</p>
+<pre><code>language: zh-Hans
+</code></pre><p>c.设置菜单<br>主题配置文件中找到menu关键字，将#去掉即可，注意后面的路径。<br>图标使用的是Font Awesome提供的。</p>
+<pre><code>home: / || home
+about: /about || user
+#tags: /tags/ || tags
+categories: /categories || th
+archives: /archives || archive
+#schedule: /schedule/ || calendar
+#sitemap: /sitemap.xml || sitemap
+#commonweal: /404 || heartbeat
+</code></pre><p>d.设置头像<br>编辑主题配置文件，搜索avatar关键字，修改路径为头像链接地址，网络也可</p>
+<pre><code>avatar: /images/avatar.jpg
+avatar: http://example.com/avatar.png
+</code></pre><p>e.背景图片<br>next主题目录下/css/_custom/custom.styl,修改url。</p>
+<pre><code>body { 
+    background-image: url(/images/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+</code></pre><hr>
 <h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h2>
       
     </div>
@@ -543,7 +578,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#未完待续"><span class="nav-number">1.</span> <span class="nav-text">未完待续</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-选择主题"><span class="nav-number">1.</span> <span class="nav-text">1,选择主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-启用主题"><span class="nav-number">2.</span> <span class="nav-text">2,启用主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-主题配置"><span class="nav-number">3.</span> <span class="nav-text">3,主题配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#未完待续"><span class="nav-number">3.1.</span> <span class="nav-text">未完待续</span></a></li></ol></li></ol></div>
             
 
           </div>
